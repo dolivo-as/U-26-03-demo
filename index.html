@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEMO – PEP porteføljeverktøy (fiktive data)</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="demobanner" class="demobanner" role="status"><b>Demo – fiktive data, ingen innlogging.</b> <span>Endringer lagres bare i denne nettleseren.</span> <button id="demoreset" type="button">Nullstill demo</button></div>
+<div id="gradbar" class="gradbar">–</div>
+<a class="skip" href="#main">Hopp til innhold</a>
+<header class="top">
+  <button id="navbtn" class="navbtn" aria-label="Meny" aria-expanded="false" aria-controls="nav">☰</button>
+  <div class="brand"><span class="logo">PEP</span><div><b>Prosjekt- og porteføljestyring EBA</b><small>Prototype · DEMO · EKSEMPELDATA</small></div></div>
+  <div class="topright">
+    <span id="platform" class="pill"></span>
+    <button id="bell" class="bell" title="Varsler" aria-label="Varsler">🔔<span id="bellcount"></span></button>
+    <label class="rolesel">Demo-rolle <select id="userSel"></select></label>
+  </div>
+</header>
+<div class="wrap">
+  <nav id="nav" class="nav" aria-label="Hovedmeny">
+    <div class="navh">Portefølje</div>
+    <a href="#/">Dashbord</a>
+    <a href="#/prosjekter">Prosjekter</a>
+    <a href="#/fremdrift">Fremdrift / milepæler</a>
+    <a href="#/okonomi" data-int="1">Økonomi og usikkerhet</a>
+    <a href="#/risiko" data-int="1">Risiko</a>
+    <a href="#/endringer">Kontrakter og endringer</a>
+    <a href="#/gevinster" data-int="1">Gevinster</a>
+    <a href="#/ressurser" data-int="1">Ressurser og kapasitet</a>
+    <a href="#/sha">SHA-avvik</a>
+    <div class="navh">Informasjon</div>
+    <a href="#/dokumenter">Dokumenter og arkiv</a>
+    <a href="#/eba">EBA-register</a>
+    <a href="#/erfaringer">Erfaringsdatabase</a>
+    <div class="navh">Styring</div>
+    <a href="#/rapporter" data-int="1">Rapporter og scenario</a>
+    <a href="#/revisjon" data-int="1">Revisjonslogg</a>
+    <a href="#/admin">Tilgang, integrasjoner og plattform</a>
+  </nav>
+  <main id="main" tabindex="-1"><p>Laster …</p></main>
+</div>
+<div id="gradbar2" class="gradbar">–</div>
+<div id="modal" class="modal hidden"><div class="modalbox" role="dialog" aria-modal="true"><button class="x" id="modalx" aria-label="Lukk">✕</button><div id="modalc"></div></div></div>
+<div id="toast" class="toast hidden"></div>
+<script src="demo.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
